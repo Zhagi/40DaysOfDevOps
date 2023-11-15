@@ -1,0 +1,30 @@
+---
+- name: Configure Apache Web Server
+  hosts: webserver
+  become: yes
+  tasks:
+    - name: Update package manager cache
+      apt:
+        update_cache: yes
+
+    - name: Install Apache web server
+      apt:
+        name: apache2
+        state: present
+
+    - name: Enable and start Apache service
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Deploy index.html
+      copy:
+        dest: /var/www/html/index.html
+        content: |
+          <html>
+          <head><title>Hello, Ansible!</title></head>
+          <body>
+          <h1>Hello, Ansible!</h1>
+          </body>
+          </html>
