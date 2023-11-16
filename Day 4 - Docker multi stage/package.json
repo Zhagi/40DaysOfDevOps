@@ -1,0 +1,27 @@
+{
+  "name": "docker-multi-stage-project",
+  "version": "1.0.0",
+  "description": "A Node.js application optimised for Docker containerisation, focusing on production efficiency and security. The project demonstrates best practices in creating Docker images specifically tailored for Node.js applications.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "echo 'No build step required'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhagi/Docker-Multi-Stage-Project.git"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Zubayda Hagi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhagi/Docker-Multi-Stage-Project/issues"
+  },
+  "homepage": "https://github.com/Zhagi/Docker-Multi-Stage-Project#readme"
+}

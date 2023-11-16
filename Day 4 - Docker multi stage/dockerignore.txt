@@ -1,0 +1,12 @@
+node_modules/
+npm-debug.log
+.git
+.gitignore
+.vscode/
+.idea/
+.vscode/
+.DS_Store
+package-lock.json
+yarn.lock
+*.log
+
